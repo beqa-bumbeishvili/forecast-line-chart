@@ -17,3 +17,30 @@ var svg = d3.select("body").append("svg")
     .append("g")
     .attr("transform",
     "translate(" + margin.left + "," + margin.top + ")");
+
+
+d3.csv("data.csv", function (error, data) {
+    if (error) throw error;
+
+    data.forEach(function (d) {
+        d.date = parseTime(d.date);
+        d.close = +d.close;
+    });
+
+    x.domain(d3.extent(data, function (d) { return d.date; }));
+    y.domain([0, d3.max(data, function (d) { return d.close; })]);
+
+    svg.append("path")
+        .data([data])
+        .attr("class", "line")
+        .attr("d", valueline);
+
+    svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
+
+    // Add the Y Axis
+    svg.append("g")
+        .call(d3.axisLeft(y));
+
+});
