@@ -68,9 +68,11 @@ function renderChart(params) {
       layouts.line = d3.line()
         .x(function (d) { return scales.x(d.date); })
         .y(function (d) { return scales.y(d.close); });
+  
 
       //drawing containers
       var container = d3.select(this);
+
 
       //add svg
       var svg = patternify({ container: container, selector: 'svg-chart-container', elementTag: 'svg' })
@@ -78,6 +80,7 @@ function renderChart(params) {
         .attr('height', attrs.svgHeight)
       // .attr("viewBox", "0 0 " + attrs.svgWidth + " " + attrs.svgHeight)
       // .attr("preserveAspectRatio", "xMidYMid meet")
+
 
       //add container g element
       var chart = patternify({ container: svg, selector: 'chart', elementTag: 'g' })
@@ -103,9 +106,9 @@ function renderChart(params) {
       // smoothly handle data updating
       updateData = function () {
 
-
       }
       //#########################################  UTIL FUNCS ##################################
+
 
       //enter exit update pattern principle
       function patternify(params) {
@@ -120,7 +123,6 @@ function renderChart(params) {
         selection.attr('class', selector);
         return selection;
       }
-
 
       window.addEventListener("resize", function () {
         var width = container.node().getBoundingClientRect().width;
