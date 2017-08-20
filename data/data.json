@@ -1,0 +1,217 @@
+{
+    "lineData": [
+        {
+            "type": "actual",
+            "data": [
+                {
+                    "date": "26-Mar-12",
+                    "close": 1000
+                },
+                {
+                    "date": "27-Mar-12",
+                    "close": 714
+                },
+                {
+                    "date": "28-Mar-12",
+                    "close": 517
+                },
+                {
+                    "date": "29-Mar-12",
+                    "close": 559
+                },
+                {
+                    "date": "30-Mar-12",
+                    "close": 519
+                },
+                {
+                    "date": "2-Apr-12",
+                    "close": 600
+                },
+                {
+                    "date": "3-Apr-12",
+                    "close": 629
+                },
+                {
+                    "date": "4-Apr-12",
+                    "close": 524
+                },
+                {
+                    "date": "5-Apr-12",
+                    "close": 583
+                },
+                {
+                    "date": "9-Apr-12",
+                    "close": 500
+                },
+                {
+                    "date": "10-Apr-12",
+                    "close": 628
+                },
+                {
+                    "date": "11-Apr-12",
+                    "close": 623
+                },
+                {
+                    "date": "12-Apr-12",
+                    "close": 602
+                },
+                {
+                    "date": "13-Apr-12",
+                    "close": 655
+                },
+                {
+                    "date": "16-Apr-12",
+                    "close": 580
+                },
+                {
+                    "date": "17-Apr-12",
+                    "close": 643
+                },
+                {
+                    "date": "18-Apr-12",
+                    "close": 443
+                },
+                {
+                    "date": "19-Apr-12",
+                    "close": 545
+                },
+                {
+                    "date": "20-Apr-12",
+                    "close": 234
+                }
+            ]
+        },
+        {
+            "type": "prediction1",
+            "data": [
+                {
+                    "date": "23-Apr-12",
+                    "close": 816
+                },
+                {
+                    "date": "24-Apr-12",
+                    "close": 930
+                },
+                {
+                    "date": "25-Apr-12",
+                    "close": 899
+                },
+                {
+                    "date": "26-Apr-12",
+                    "close": 989
+                },
+                {
+                    "date": "27-Apr-12",
+                    "close": 967
+                },
+                {
+                    "date": "30-Apr-12",
+                    "value": 853
+                },
+                {
+                    "date": "1-May-12",
+                    "close": 858
+                }
+            ]
+        },
+        {
+            "type": "prediction2",
+            "data": [
+                {
+                    "date": "23-Apr-12",
+                    "close": 766
+                },
+                {
+                    "date": "24-Apr-12",
+                    "close": 130
+                },
+                {
+                    "date": "25-Apr-12",
+                    "close": 99
+                },
+                {
+                    "date": "26-Apr-12",
+                    "close": 89
+                },
+                {
+                    "date": "27-Apr-12",
+                    "close": 67
+                },
+                {
+                    "date": "30-Apr-12",
+                    "value": 53
+                },
+                {
+                    "date": "1-May-12",
+                    "close": 58
+                }
+            ]
+        },
+        {
+            "type": "prediction3",
+            "data": [
+                {
+                    "date": "23-Apr-12",
+                    "close": 766
+                },
+                {
+                    "date": "24-Apr-12",
+                    "close": 130
+                },
+                {
+                    "date": "25-Apr-12",
+                    "close": 99
+                },
+                {
+                    "date": "26-Apr-12",
+                    "close": 89
+                },
+                {
+                    "date": "27-Apr-12",
+                    "close": 67
+                },
+                {
+                    "date": "30-Apr-12",
+                    "value": 53
+                },
+                {
+                    "date": "1-May-12",
+                    "close": 58
+                }
+            ]
+        },
+        {
+            "type": "prediction4",
+            "data": [
+                {
+                    "date": "23-Apr-12",
+                    "close": 766
+                },
+                {
+                    "date": "24-Apr-12",
+                    "close": 130
+                },
+                {
+                    "date": "25-Apr-12",
+                    "close": 99
+                },
+                {
+                    "date": "26-Apr-12",
+                    "close": 89
+                },
+                {
+                    "date": "27-Apr-12",
+                    "close": 67
+                },
+                {
+                    "date": "30-Apr-12",
+                    "value": 53
+                },
+                {
+                    "date": "1-May-12",
+                    "close": 58
+                }
+            ]
+        }
+    ]
+}

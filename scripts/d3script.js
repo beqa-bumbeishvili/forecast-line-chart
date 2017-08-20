@@ -98,7 +98,9 @@ function renderChart(params) {
         .attr("fill", "none")
         .attr("stroke", "teal")
         .attr("stroke-width", attrs.lineWidth)
-        .style("stroke-dasharray", ("10, 6"));
+        .style("stroke-dasharray", function(d,i){
+          return "10, 6";
+        });
 
       var bottomAxisWrapper = patternify({ container: chart, selector: 'bottom-axis-wrapper', elementTag: 'g' })
       bottomAxisWrapper

@@ -21,13 +21,12 @@
     <script src="scripts/d3script.js"></script>
 
     <script>
-        d3.csv("data/data.csv", function (error, data) {
-                
+        d3.json("data/data.json", function (error, data) {
             var chart = renderChart()
                 // .svgHeight(window.innerHeight-30)
                 // .svgWidth(window.innerWidth-30)
                 // .container('#myGraph')
-                .data(data)
+                .data(data["lineData"][0]["data"])
                 .debug(true)
                 .run()
         });
