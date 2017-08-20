@@ -9,6 +9,7 @@ function renderChart(params) {
     marginRight: 30,
     marginLeft: 50,
     container: 'body',
+    lineWidth: 2,
     data: null
   };
 
@@ -55,12 +56,16 @@ function renderChart(params) {
       scales.y = d3.scaleLinear()
         .range([calc.chartHeight, 0])
         .domain([0, d3.max(attrs.data, function (d) { return d.close; })]);
+      scales.inline = d3.scaleLinear()
+        .range([calc.chartHeight, 0])
+        .domain([0, d3.max(attrs.data, function (d) { return d.close; })]);
 
 
       // #################### axes ###################
       var axes = {}
       axes.bottom = d3.axisBottom(scales.x)
       axes.left = d3.axisLeft(scales.y)
+      axes.inline = d3.axisLeft(scales.inline)
 
 
       // ################## layout ###################
@@ -92,7 +97,8 @@ function renderChart(params) {
         .attr("d", layouts.line)
         .attr("fill", "none")
         .attr("stroke", "teal")
-        .attr("stroke-width", 2);
+        .attr("stroke-width", attrs.lineWidth)
+        .style("stroke-dasharray", ("10, 6"));
 
       var bottomAxisWrapper = patternify({ container: chart, selector: 'bottom-axis-wrapper', elementTag: 'g' })
       bottomAxisWrapper
@@ -102,6 +108,10 @@ function renderChart(params) {
       var leftAxisWrapper = patternify({ container: chart, selector: 'left-axis-wrapper', elementTag: 'g' })
       leftAxisWrapper
         .call(axes.left);
+
+      var verticalLine = patternify({ container: chart, selector: 'inline-axis', elementTag: 'g' })
+      leftAxisWrapper
+        .call(axes.inline);
 
       // smoothly handle data updating
       updateData = function () {
